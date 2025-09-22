@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+<style>
+    .main{
+        background-color: blueviolet;
+        height: 200px;
+        width: 100%;
+    }
+    .container{
+        padding: 20px;
+        background-color: cyan;
+        height: 100px;
+        width: 300px;
+    }
+    .container1{
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+        .container2{
+         padding: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;    
+    }
+    .head{
+        height: 100px;
+        width: 100%;
+        background-color: chartreuse;
+    }
+    .sidebar{
+        height: 100px;
+        width: 100%;
+        background-color: crimson;
+    } 
+    @media (max-width: 600px) {
+      .container{
+          background-color: darkorange;
+      }  
+      }
+    
+    
+</style>    
+</head>
+<body>
+    <div class="header">
+        <div class="sidebar">Sidebar</div>
+         <div class="head">header</div></div>
+    <div class="main">Main </div>
+        
+          <div class="container1">
+          <div class="container">content</div>
+          <div class="container">content</div>
+          <div class="container">content</div></div>
+    
+          <div class="container2">
+          <div class="container">content</div>
+          <div class="container">content</div>
+          <div class="container">content</div> 
+        </div>
+</body>
+</html>
